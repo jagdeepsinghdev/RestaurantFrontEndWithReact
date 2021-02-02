@@ -1,0 +1,27 @@
+.CreateMenuItem {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 50%;
+    justify-content: center;
+}
+.CreateMenuItem > input {
+    padding: 10px;
+    margin-top: 10px;
+
+    border: 1px solid lightgray;
+}
+.CreateMenuItem > button {
+    display: flex;
+    justify-content: center;
+    background-color: #2a7e97; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    width: 50%;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 10px 24px;
+}

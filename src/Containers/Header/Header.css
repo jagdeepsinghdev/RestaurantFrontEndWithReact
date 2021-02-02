@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: sticky;
+    background-color: black;
+    z-index: 100;
+    width: 100%;
+    padding: 20px;
+}
+.header > a {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: 500;
+}
+.header > a:hover {
+    color: lightgray;
+}

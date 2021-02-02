@@ -1,0 +1,38 @@
+.item_desc {
+    padding: 20px;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    background-color: #e026269c;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    width: 80px;
+    font-size: 14px;
+    margin-top: 5px;
+    cursor: pointer;
+    padding: 4px 4px;
+    border-radius: 8px;
+}
+
+.button:focus {
+    outline: 0;
+}
+.item_desc > img {
+    display: inline;
+    object-fit: contain;
+    height: 100px;
+    width: 100px;
+}
+.emptyCart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: rgb(189, 170, 145);
+}
+.if_Items {
+    padding: 20px;
+}

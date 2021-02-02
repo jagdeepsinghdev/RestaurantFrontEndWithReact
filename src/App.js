@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+
+import {
+    BrowserRouter as Router,
+    Route,
+    Switch,
+    Redirect,
+} from 'react-router-dom'
+
+import MenuItems from './Containers/MenuItems/MenuItems'
+import CreateMenuItem from './Component/MenuItem/CreateMenuItem'
+import Header from './Containers/Header/Header'
+import Cart from './Containers/Cart/Cart'
+import Login from './Containers/Login/Login'
+import Checkout from './Containers/Checkout/checkout'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Router>
+                <Header />
+                <Switch>
+                    <Route path="/MenuItems" exact component={MenuItems} />
+                    <Route path="/Login" component={Login} />
+                    <Route
+                        path="/CreateMenuItem"
+                        exact
+                        component={CreateMenuItem}
+                    />
+                    <Route path="/Cart" exact component={Cart} />
+                    <Route path="/Checkout" exact component={Checkout} />
+                    <Redirect exact from="/" to="Login" />
+                </Switch>
+            </Router>
+        </div>
+    )
 }
 
-export default App;
+export default App
